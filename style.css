@@ -1,0 +1,124 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+#total{
+   animation: total 3s linear infinite;
+}
+@keyframes total{
+   
+   50%{ 
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(-15px);
+    }
+}
+
+/* For the clouds */
+#bck{
+    background: url(background.jpg);
+    background-size: cover;
+    
+    height: 60vh;
+    width: 200%;
+    animation: clouds linear .1s infinite;
+}
+@keyframes clouds{
+    100%{
+        transform: translateX(-30vw);
+    }
+}
+
+/* For the trees */
+#trees{
+    background: url(trees.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 95vh;
+    width: 130%;
+    position: absolute ;
+    top: -178px;
+    animation: treesmotion linear 1s infinite;
+}
+@keyframes treesmotion{
+    100%{
+        transform: translateX(-10vw);
+    }
+}
+
+/* For the track */
+    #track{
+        background: url(track.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 36vh;
+        width: 200%;
+        position: relative;
+        top: 42px;
+        animation: trackmotion linear .01s infinite;
+    }  
+    @keyframes trackmotion{
+        
+        100%{
+            transform: translateX(-10vw);
+        }
+    }
+    
+
+    #car img{
+        position: absolute;
+        height: 84px;
+    width: 263px;
+    top: 403px;
+    left: 411px;
+    animation: carbody linear .5s infinite;
+    } 
+    @keyframes carbody{
+        0%{
+            transform: translateX(3px);
+
+        }
+        50%{
+            transform: translateY(3px);
+        }
+        100%{
+            transform: translateY(-3px);
+        }
+    }
+
+ /* For the wheels */
+#leftwheel{
+    background: url(leftwheel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 9vh;
+    position: absolute;
+    top: 429px;
+    left: 440px;
+    animation: leftwheel linear .01s infinite;
+}
+@keyframes leftwheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#rightwheel{
+    background: url(rightwheel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 9vh;
+    position: absolute;
+    top: 435px;
+    left: 574px;
+    animation: rightwheel linear .01s infinite;
+}
+@keyframes rightwheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
