@@ -5,12 +5,19 @@
 #car img{
     
     left: 77px;
+    top:604px;
     
 }
 #leftwheel{
-    left: 105px;
+    left: 93px;
+    top:629px;
+    height: 67px;
+    width: 76px;
 }
 #rightwheel{
-    top: 433px;
-    left: 238px;
+    top: 637px;
+    left: 228px;
+    height: 67px;
+    width: 76px;
+
 }
